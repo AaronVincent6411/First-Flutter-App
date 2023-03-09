@@ -50,6 +50,12 @@ class MyHomePage extends StatelessWidget {
             },
             child: Text('Next'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              appState.getNext();
+            },
+            child: Text('Next'),
+          )
         ],
       ),
     );
