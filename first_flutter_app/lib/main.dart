@@ -43,7 +43,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('A random AWESOME idea:'),
+          TextCard(),
           BigCard(pair: pair),
           ElevatedButton(
             onPressed: () {
@@ -53,6 +53,20 @@ class MyHomePage extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class TextCard extends StatelessWidget {
+  const TextCard({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text('A random AWESOME idea:'),
     );
   }
 }
