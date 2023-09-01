@@ -6,11 +6,17 @@ void main() {
   runApp(MyApp());
 }
 
+
+// String getname(String firstname, String lastName) {
+//   return firstname+lastName;
+// }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // print(getname('Hello','Daa'));
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
